@@ -39,7 +39,7 @@ app.post("/", (req, res) => {
 
   const options = {
     method: "POST",
-    auth: "mirjana1:bdef86ca9ccca85d98e4f835bd1b0bdc-us20",
+    auth: "mirjana1:appKey",
   };
   const request = https.request(url, options, function (response) {
     if (response.statusCode === 200) {
@@ -61,10 +61,4 @@ app.post("/failure", (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
   console.log("server is running at port 3000");
 });
-// app-key
 
-// 5b8f05d78d73d635e91b836e7d6e4b40-us20
-
-// bdef86ca9ccca85d98e4f835bd1b0bdc-us20
-//list id
-//a0a1c0cd64
